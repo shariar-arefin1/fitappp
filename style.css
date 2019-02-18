@@ -1,0 +1,270 @@
+/*
+Name: Ujjal Deb
+Country: Bangladesh
+Email: deb.ujjal.ksa@gmail.com
+*/
+
+/*
+1 Global CSS
+2 Navigation section CSS
+3 About section CSS
+4 Features section CSS
+5 Blog section CSS
+6 Reviews section CSS
+7 Support section CSS
+8 Media Query
+	For Mobile Devices
+	For Tablet Devices
+*/
+
+/* Global CSS */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+section{
+	padding: 100px 0;
+}
+h2{
+	font-size: 36px;
+	font-weight: 300;
+	color: #5a5a5a;
+}
+p{
+	font-weight: 300;
+	color: #5a5a5a;
+}
+.font-green{
+	color: #2ecc71;
+}
+
+/* Navigation section CSS */
+.navbar-light{
+	background: none !important;
+	box-shadow: 0 0 4px #2ecc71;
+}
+.navbar-light .container{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.navbar-light .navbar-brand {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 36px;
+    color: #ddd;
+}
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 15px;
+    color: #ddd !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #333 !important;
+}
+.navbar-light .btn{
+	padding: 4px 24px;
+    background: #fff;
+    color: #2ecc71;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.navbar-light .btn:hover{
+	padding: 4px 20px;
+}
+
+
+/* About section CSS */
+.about{
+	background: #2ecc71 url(../images/banner.png) no-repeat left bottom;
+	background-size: cover;
+	padding:0;
+}
+.about .app-icon{
+	margin: 220px 0 50px;
+}
+.about h1{
+	font-size: 55px;
+    font-weight: 300;
+    color: #fff;
+}
+.about h1 span{
+	font-weight: 500;
+}
+.about p{
+	color: #fff;
+	margin: 20px 0 50px;
+}
+.about a{
+	margin-right: 20px;
+}
+.about a .img-fluid{
+	transition: 0.5s;
+}
+.about a .img-fluid:hover{
+	transform: scale(1.2,1.2);
+}
+.about .iphone{
+	margin-top: 120px;
+}
+
+/* Features section CSS */
+.features .features-content{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+.features h2{
+	margin-bottom: 15px;
+}
+
+/* Blog section CSS */
+.blog{
+	background: url(../images/blog.png) no-repeat;
+	background-size: cover;
+	padding: 80px 0 0;
+}
+.blog p{
+	margin: 12px 0 50px;
+}
+
+/* Reviews section CSS */
+.reviews h2{
+	margin-bottom: 15px;
+}
+.reviews .intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.reviews .menu-content{
+	display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    width: 75%;
+    margin-left: auto;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+.reviews .menu-content:hover{
+	transform: scale(1.2,1.2);
+}
+.reviews .fa{
+	font-size: 4px;
+}
+
+/* Support section CSS */
+.support{
+	background: #2ecc71 url(../images/support-bg.png) no-repeat;
+	background-size: cover;
+}
+.support h2{
+	color: #fff;
+	margin-bottom: 15px;
+}
+.support h2 span{
+	font-weight: 500;
+}
+.support p{
+	color: #fff;
+}
+.support .btn{
+	background: #fff;
+	color: #2ecc71;
+	border-radius: 30px;
+	padding: 4px 70px;
+	margin-top: 35px;
+	font-weight: 500;
+	transition: 0.5s;
+}
+.support .btn:hover{
+	padding: 4px 50px;
+}
+
+/* Media Query */
+/* For Mobile Devices */
+@media screen and (max-width: 767px){
+	section {
+		padding: 40px 0;
+	}
+	.about .app-icon {
+	    margin: 100px auto 10px;
+	    display: block;
+	}
+	.about h1 {
+	    font-size: 40px;
+	    text-align: center;
+	}
+	.about p {
+	    margin: 10px 0 30px;
+	    text-align: center;
+	}
+	.about .download-app{
+		text-align: center;
+	}
+	.about a{
+		margin: 0;
+		text-align: center;
+	}
+	.about a .img-fluid:hover{
+		transform: scale(1,1.1);
+	}
+	.about .iphone {
+	    margin-top: 30px;
+	}
+	.features h2 {
+	    text-align: center;
+	}
+	.features p {
+		text-align: center;
+    	margin: 0;
+	}
+	.blog {
+	    padding: 40px 0 0;
+	}
+	.reviews h2,
+	.reviews p {
+	    text-align: center;
+	}
+	.reviews .menu-content {
+		flex-direction: column;
+		margin: auto;
+		width: 100%;
+	}
+	.reviews .menu-content .mr-5{
+		margin-right: 0 !important;
+		text-align: center;
+	}
+	.reviews .menu-content .text-right{
+		text-align: center !important;
+		margin-top: 10px;
+	}
+	.support .btn {
+	    margin-top: 10px;
+	}
+}
+
+/* For Tablet Devices */
+@media (min-width: 768px) and (max-width: 991px){
+	section{
+		padding: 70px 0;
+	}
+	.about .app-icon {
+	    margin: 115px 0 20px;
+	}
+	.about h1 {
+	    font-size: 50px;
+	}
+	.about p {
+	    color: #fff;
+	    margin: 20px 0 30px;
+	}
+	.reviews h2,
+	.reviews p {
+	    text-align: center;
+	}
+	.reviews .menu-content {
+	    margin: auto;
+	}
+}
